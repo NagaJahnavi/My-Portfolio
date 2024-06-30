@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naga Jahnavi's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1>Naga Jahnavi's Portfolio</h1>
+
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa fa-times fas" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa fa-bars fas" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span>Naga Jahnavi</span></h1>
+            <p>Software Developer | ML Enthusiast</p>
+            <div class="social-icons">
+                <a href="images/sde_resume.pdf" download class="btn"> SDE Resume</a>
+                <a href="images/ml_resume.pdf" download class="btn"> ML Resume</a>
+                <br>
+                <a href="https://github.com/NagaJahnavi"><i class="fa fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/naga-jahnavi"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I am a Software Engineer with over 2 years of experience at Amazon, currently pursuing a Master’s in Computer Science at North Carolina State University to strengthen my foundation in Software Engineering and expand my expertise in AI and Machine Learning.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>C, Java, Python, R, Javascript</li>
+                        <li><span>Databases/ Operating Systems</span><br>MySQL, NoSQL, MongoDB, MariaDB, Oracle, Linux, Windows.</li>
+                        <li><span>Web Development</span><br>HTML, CSS, Bootstrap, Tailwind CSS, Javascript, React.js, Node.js, Express.js, XML, JSON, JQuery, REST API, SOAP, AJAX, Redux, PHP, Spring Boot, Spring Framework.</li>
+                        <li><span>Cloud</span><br>AWS, DynamoDB, S3, EC2, Lambda, Cloud watch, SQS, SNS, Redshift, Docker, Kubernetes.</li>
+                        <li><span>Tools</span><br>Git , GitHub, Intellij Idea, Visual Studio Code, Eclipse, MS Excel, Postman, Jenkins, JIRA, CI/CD, Agile, Scrum, Maven.</li>
+                        <li><span>ML Libraries/ Frameworks</span><br>Pytorch, Tensorflow, Keras, Numpy, Pandas, Scikit-learn, MatplotLib.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Software Development Engineer @ Amazon</span><br><span>
+                            <i class="fa fa-calendar" style="color: grey;"></i> Aug 2021 - July 2023</span><br>
+* Implemented efficient, unit-tested code in Java and Spring Boot utilizing JUnit, Mockito, and EasyMock frameworks, achieving 90% code coverage. Involved in the full Software Development Lifecycle by conducting  end-to-end functional testing and managed deployments. <br>
+* Developed a game-changing Aztec barcode feature, including frontend development in HTML, CSS, Javascript, React.js, and backend API development in Java, Spring Framework resolving legacy issues and unblocking 5 carrier migrations
+with a 20% boost in business.<br>
+* Updated Standard Operating Procedures  for process improvement and developed master test cases, resulting in a 50% reduction in production failures.<br>
+* Implemented a Python script for fetching the manifest IDs from DynamoDB , reducing 20% manual effort.<br>
+* Integrated external logistics providers with Amazon's systems by converting business requirements to functional designs 
+and furnished a platform for sellers to ship their products, serving 35% of traffic.
+</li>
+<li><span>Software Development Engineer Intern@ Amazon</span><br><span>
+    <i class="fa fa-calendar" style="color: grey;"></i> Jan 2021 - July 2021</span><br>
+   * Leveraged exceptional project management and problem solving skills to pioneer the team's inaugural label 
+migration project, executing a rapid migration, and slashing the project timeline by 30% through concurrent phase work.<br>
+* Built Rest API using Java, SpringBoot for dynamic Configuration retrieval from S3 bucket, reducing hard 
+coded constants by over 500 lines and enhancing code scalability and maintainability by 20%.<br>
+* Debugged and troubleshooted application-level issues utilizing Linux commands and shell scripting to analyze 
+application logs and reduced ticket count by 80%.
+
+    </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span><i class="fa fa-calendar" style="color: grey;"></i> 
+                            Aug 2023 - Present</span><br><span><i class="fa fa-graduation-cap" style="color: #e7eaee;"></i>
+                                Master of Computer Science</span><br>
+                        North Carolina State University, Raleigh, NC<br>
+                        </li>
+                        <br><br>
+                        <li><span><i class="fa fa-calendar" style="color: grey;"></i>
+                            Aug 2017 - July 2021</span><br><span><i class="fa fa-graduation-cap" style="color: #e7eaee;"></i>
+                                B.Tech, Computer Science and Engineering</span><br>
+                            CVR College of Engineering, Hyderabad</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------projects------------ -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/fullstack.jpeg" style="width: 100%; height: 100%;"> 
+                <div class="layer">
+                    <h4>Student Greivance Support System</h4><br>
+                    <p>This website connects students with grievance resolution committees</p>
+                    <a href="https://github.com/NagaJahnavi/StudentGrievanceSupportSystem"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/fullstack.jpeg" style="width: 100%; height: 100%;"> 
+                <div class="layer">
+                    <h4>Seller Performance Management System</h4><br>
+                    <p>This website is an ecommerce tool to monitor seller performance</p>
+                    <a href="https://github.com/NagaJahnavi/Seller-Performance-Management-System"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work"> 
+                <img src="images/database.jpg" style="width: 100%; height: 100%;">  
+                <div class="layer">
+                    <h4>Wolf Parking mangement System</h4><br>
+                    <p>Database system to manage the parking at University</p>
+                    <a href="https://github.com/NagaJahnavi/Wolf-Parking-Management-System"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/machinelearning.jpg" style="width: 100%; height: 100%;"> 
+                <div class="layer">
+                    <h4>Rainfall Prediction</h4><br>
+                    <p>This projects predicts the next day rainfall using Machine Learning</p>
+                    <a href="https://github.com/NagaJahnavi/Rainfall-Prediction"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/machinelearning.jpg" style="width: 100%; height: 100%;"> 
+                <div class="layer">
+                    <h4>Bankruptcy Prediction</h4><br>
+                    <p>This project predicts if a company would go bankrupt using Machine Learning</p>
+                    <a href="https://github.com/NagaJahnavi/BankruptcyPrediction"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/deeplearning.jpeg" style="width: 100%; height: 100%;"> 
+                <div class="layer">
+                    <h4>Human Activity Recognition</h4><br>
+                    <p>Prediction of human activity based on accelerometer and gyrometer signals using Deep Learning</p>
+                    <a href="https://github.com/NagaJahnavi/Human-Activity-Recognition"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/cloudcomputing.jpg" style="width: 100%; height: 100%;"> 
+                <div class="layer">
+                    <h4>Cloud Architecture for Vudeo Streaming</h4><br>
+                    <p>Cloud Architecture design in AWS for video streaming application.</p>
+                    <a href="https://docs.google.com/document/d/1JVykkXAWiqHNwCQdXttHfDg1onbDDPPHneY_RlgAEJM/edit?usp=sharing"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa fa-paper-plane"></i> nkommar@ncsu.edu</p>
+                <p><i class="fa fa-phone"></i> +1 919-559-8556</p>
+                <div class="social-icons">
+                    <a href="https://github.com/NagaJahnavi"><i class="fa fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/naga-jahnavi"><i class="fa fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2024 Naga Jahnavi. All rights reserved.</p>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>
